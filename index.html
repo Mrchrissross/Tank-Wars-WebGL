@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | TankWars</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <script src="Build/Build.asm.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build.data",
+        frameworkUrl: "Build/Build.asm.framework.js",
+        codeUrl: "Build/Build.asm.js",
+        memoryUrl: "Build/Build.asm.mem",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "LethalGames",
+        productName: "TankWars",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
